@@ -1,0 +1,27 @@
+
+.h2{
+    color: aqua;
+    font-size: 40px;
+}
+.h2:hover{
+    background-color: pink;
+    display: inline-block;
+    transition-property: all;
+    transition-delay: 0.3s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+.animation-block{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    animation-name: cube    ;
+    animation-duration: 0.5s;
+}
+
+@keyframes cube {
+    0% { top: 0; background-color: green;}
+    50% { top: 100px; background-color: blue;}
+    100% { top: 200px; background-color: pink;}
+}
